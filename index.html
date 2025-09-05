@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2D Fluid Simulation - Navier Stokes</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+      color: white;
+      font-family: sans-serif;
+      overflow: hidden;
+    }
+    canvas {
+      border: 1px solid #444;
+      background: black;
+    }
+    #clearBtn {
+      position: absolute;
+      top: 20px; 
+      left: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #0af;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <button id="clearBtn">Refresh</button>
+  <canvas id="canvas"></canvas>
+  <script src="fluid.js"></script>
+</body>
+</html>
